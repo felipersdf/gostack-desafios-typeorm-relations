@@ -20,7 +20,7 @@ export default class AddCustomerIdToOrders1589465780717
     await queryRunner.createForeignKey(
       'orders',
       new TableForeignKey({
-        name: 'OrdersCustomers',
+        name: 'OrderCustomers',
         columnNames: ['customer_id'],
         referencedColumnNames: ['id'],
         referencedTableName: 'customers',
